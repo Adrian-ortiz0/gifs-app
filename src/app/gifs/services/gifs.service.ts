@@ -59,4 +59,7 @@ export class GifsService {
     //     this.searchedGifsLoading.set(false);
     //   });
   }
+  getHistoryGifs(query:string): Gif[] {
+    return this.searchHistory()[query] ?? [];
+  }
 }
